@@ -4,6 +4,8 @@
 import { useState } from "react";
 import FAQSection from "@/components/FAQ";
 import Link from "next/link";
+import { MdEmail, MdLocationOn } from "react-icons/md";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -73,8 +75,8 @@ export default function ContactPage() {
             <div className="space-y-8">
               {/* Email */}
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center text-3xl flex-shrink-0">
-                  📧
+                <div className="w-12 h-12  rounded-full flex items-center justify-center flex-shrink-0">
+                  <MdEmail className="text-2xl text-orange-600" />
                 </div>
                 <div className="pt-2">
                   <p className="font-medium text-textDark">Email</p>
@@ -84,8 +86,8 @@ export default function ContactPage() {
 
               {/* WhatsApp */}
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-3xl flex-shrink-0">
-                  💬
+                <div className="w-12 h-12 rounded-full flex items-center justify-center shrink-0">
+                  <FaWhatsapp className="text-2xl text-orange-600" />
                 </div>
                 <div className="pt-2">
                   <p className="font-medium text-textDark">WhatsApp</p>
@@ -95,8 +97,8 @@ export default function ContactPage() {
 
               {/* Address */}
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-3xl flex-shrink-0">
-                  📍
+                <div className="w-12 h-12  rounded-full flex items-center justify-center shrink-0">
+                  <MdLocationOn className="text-2xl text-orange-600" />
                 </div>
                 <div className="pt-2">
                   <p className="font-medium text-textDark">Our Location</p>
