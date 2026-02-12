@@ -1,26 +1,42 @@
+/* src/app/globals.css */
+
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Define ALL custom colors here – Tailwind v4 */
+@theme {
+  --color-primary: #FD4A09;
+  --color-bgLight: #F9F9F9;
+  --color-bgHero: #FAF9F9;
+  --color-bgDark: #161616;
+  --color-accentGreen: #32CD32;
+  --color-textDark: #333333;
+  --color-textGray: #666666;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  body {
+    @apply bg-bgLight text-textDark antialiased;
+    margin: 0;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  * {
+    @apply box-border;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .animate-marquee {
+    display: flex;
+    animation: marquee 25s linear infinite;
+    width: max-content;
+  }
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+
+  .animate-marquee:hover {
+    animation-play-state: paused;
+  }
 }
