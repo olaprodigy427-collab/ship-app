@@ -103,7 +103,7 @@ export default function Footer() {
           </p>
 
           {/* Social Icons */}
-          <div className="flex items-center gap-5">
+          <div id="socials-section" className="flex items-center gap-5">
             <span className="text-gray-400">Follow us</span>
             <div className="flex gap-4">
               <Link href="#" className="hover:opacity-80 transition">

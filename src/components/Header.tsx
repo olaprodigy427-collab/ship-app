@@ -30,42 +30,38 @@ export default function Header() {
         <nav className="hidden md:flex items-center space-x-8">
           <Link
             href="/shipping"
-            className={`px-4 py-2 rounded-full transition font-medium ${
-              isActive("/shipping")
+            className={`px-4 py-2 rounded-full transition font-medium ${isActive("/shipping")
                 ? "bg-primary text-white"
                 : "text-textDark hover:text-primary hover:bg-gray-50"
-            }`}
+              }`}
           >
             Shipping
           </Link>
           <Link
             href="/tracking"
-            className={`px-4 py-2 rounded-full transition font-medium ${
-              isActive("/tracking")
+            className={`px-4 py-2 rounded-full transition font-medium ${isActive("/tracking")
                 ? "bg-primary text-white"
                 : "text-textDark hover:text-primary hover:bg-gray-50"
-            }`}
+              }`}
           >
             Tracking
           </Link>
-          
+
           <Link
             href="/contact"
-            className={`px-4 py-2 rounded-full transition font-medium ${
-              isActive("/contact")
+            className={`px-4 py-2 rounded-full transition font-medium ${isActive("/contact")
                 ? "bg-primary text-white"
                 : "text-textDark hover:text-primary hover:bg-gray-50"
-            }`}
+              }`}
           >
             Contact
           </Link>
           <Link
             href="/about"
-            className={`px-4 py-2 rounded-full transition font-medium ${
-              isActive("/about")
+            className={`px-4 py-2 rounded-full transition font-medium ${isActive("/about")
                 ? "bg-primary text-white"
                 : "text-textDark hover:text-primary hover:bg-gray-50"
-            }`}
+              }`}
           >
             About us
           </Link>
@@ -75,11 +71,10 @@ export default function Header() {
         <div className="hidden md:flex items-center space-x-4">
           <Link
             href="/login"
-            className={`px-4 py-2 rounded-full transition font-medium ${
-              isActive("/login")
+            className={`px-4 py-2 rounded-full transition font-medium ${isActive("/login")
                 ? "bg-primary text-white"
                 : "text-textDark hover:text-primary hover:bg-gray-50"
-            }`}
+              }`}
           >
             Log in
           </Link>
@@ -104,55 +99,41 @@ export default function Header() {
         <div className="md:hidden bg-white border-t mt-2 py-6 px-4 space-y-4 shadow-lg">
           <Link
             href="/shipping"
-            className={`block px-5 py-3 rounded-full transition ${
-              isActive("/shipping")
+            className={`block px-5 py-3 rounded-full transition ${isActive("/shipping")
                 ? "bg-primary text-white font-medium"
                 : "text-textDark hover:bg-gray-100"
-            }`}
+              }`}
             onClick={() => setIsMobileOpen(false)}
           >
             Shipping
           </Link>
           <Link
             href="/tracking"
-            className={`block px-5 py-3 rounded-full transition ${
-              isActive("/tracking")
+            className={`block px-5 py-3 rounded-full transition ${isActive("/tracking")
                 ? "bg-primary text-white font-medium"
                 : "text-textDark hover:bg-gray-100"
-            }`}
+              }`}
             onClick={() => setIsMobileOpen(false)}
           >
             Tracking
           </Link>
-          <Link
-            href="/resources"
-            className={`block px-5 py-3 rounded-full transition ${
-              isActive("/resources")
-                ? "bg-primary text-white font-medium"
-                : "text-textDark hover:bg-gray-100"
-            }`}
-            onClick={() => setIsMobileOpen(false)}
-          >
-            Resources
-          </Link>
+
           <Link
             href="/contact"
-            className={`block px-5 py-3 rounded-full transition ${
-              isActive("/contact")
+            className={`block px-5 py-3 rounded-full transition ${isActive("/contact")
                 ? "bg-primary text-white font-medium"
                 : "text-textDark hover:bg-gray-100"
-            }`}
+              }`}
             onClick={() => setIsMobileOpen(false)}
           >
             Contact
           </Link>
           <Link
             href="/about"
-            className={`block px-5 py-3 rounded-full transition ${
-              isActive("/about")
+            className={`block px-5 py-3 rounded-full transition ${isActive("/about")
                 ? "bg-primary text-white font-medium"
                 : "text-textDark hover:bg-gray-100"
-            }`}
+              }`}
             onClick={() => setIsMobileOpen(false)}
           >
             About us
@@ -162,11 +143,10 @@ export default function Header() {
           <div className="pt-4 border-t space-y-3">
             <Link
               href="/login"
-              className={`block px-5 py-3 rounded-full transition text-center ${
-                isActive("/login")
+              className={`block px-5 py-3 rounded-full transition text-center ${isActive("/login")
                   ? "bg-primary text-white font-medium"
                   : "text-textDark hover:bg-gray-100"
-              }`}
+                }`}
               onClick={() => setIsMobileOpen(false)}
             >
               Log in

@@ -44,19 +44,22 @@ export default function ContactPage() {
         <h1 className="text-4xl md:text-5xl font-bold text-textDark mb-8">Support Center</h1>
 
         {/* Tabs */}
-        <div className="flex justify-center gap-6 md:gap-12 text-base md:text-lg font-medium border-b border-gray-200 pb-4 overflow-x-auto">
+        <div className="flex justify-start md:justify-center gap-6 md:gap-12 text-base md:text-lg font-medium border-b border-gray-200 pb-4 overflow-x-auto px-4 scrollbar-hide">
           <Link
-            href="/contact"
-            className="text-textGray hover:text-textDark transition whitespace-nowrap"
+            href="#faq-section"
+            className="text-textGray hover:text-primary transition-colors whitespace-nowrap font-semibold border-b-2 border-transparent hover:border-primary pb-1"
           >
             FAQ'S
           </Link>
-          <Link href="#" className="text-textGray hover:text-textDark transition whitespace-nowrap">
+          <Link
+            href="#socials-section"
+            className="text-textGray hover:text-primary transition-colors whitespace-nowrap font-semibold border-b-2 border-transparent hover:border-primary pb-1"
+          >
             Socials
           </Link>
           <Link
-            href="/contact"
-            className="text-textGray hover:text-textDark transition whitespace-nowrap"
+            href="#message-form"
+            className="text-textGray hover:text-primary transition-colors whitespace-nowrap font-semibold border-b-2 border-transparent hover:border-primary pb-1"
           >
             Send Message
           </Link>
@@ -109,7 +112,7 @@ export default function ContactPage() {
           </div>
 
           {/* Right Column - Contact Form Card */}
-          <div className="bg-white rounded-3xl shadow-xl p-8 md:p-10">
+          <div id="message-form" className="bg-white rounded-3xl shadow-xl p-6 sm:p-8 md:p-10">
             <h3 className="text-xl md:text-2xl font-semibold mb-8 text-center md:text-left">
               Have a question for us? Let us know & we will respond within 24 hours
             </h3>
@@ -199,7 +202,9 @@ export default function ContactPage() {
       </div>
 
       {/* FAQ Section */}
-      <FAQSection />
+      <div id="faq-section">
+        <FAQSection />
+      </div>
     </div>
   );
 }
