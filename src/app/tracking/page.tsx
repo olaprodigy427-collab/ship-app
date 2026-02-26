@@ -56,7 +56,7 @@ export default function TrackingPage() {
       {/* Title */}
       <section className="pt-16 pb-8 md:pt-20 md:pb-12 px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-textDark mb-4">
-          Choose Your Preferred Shipping <br></br> Option By Cost
+          Choose Your Preferred Shipping <br className="hidden sm:inline"></br> Option By Cost
         </h1>
       </section>
 
@@ -84,11 +84,10 @@ export default function TrackingPage() {
                 <button
                   key={tab}
                   onClick={() => setFilter(tab)}
-                  className={`px-6 py-2.5 rounded-full text-sm font-medium transition ${
-                    filter === tab
+                  className={`px-6 py-2.5 rounded-full text-sm font-medium transition ${filter === tab
                       ? "bg-primary text-white"
                       : "bg-white text-textGray border border-gray-300 hover:bg-gray-100"
-                  }`}
+                    }`}
                 >
                   {tab}
                 </button>
@@ -103,7 +102,7 @@ export default function TrackingPage() {
                 filteredShipments.map((shipment) => (
                   <div
                     key={shipment.id}
-                    className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition"
+                    className="bg-white rounded-2xl shadow-lg p-4 sm:p-6 hover:shadow-xl transition"
                   >
                     <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-5">
                       <div>
@@ -172,7 +171,7 @@ export default function TrackingPage() {
             />
             <div className="p-5 bg-white/90 backdrop-blur-sm">
               <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mb-4">
-                <p className="font-bold text-lg">Order #20564387654563</p>
+                <p className="font-bold text-base sm:text-lg break-all sm:break-normal">Order #20564387654563</p>
                 <span className="bg-orange-500 text-white px-4 py-1.5 rounded-full text-sm font-medium">
                   In transit
                 </span>

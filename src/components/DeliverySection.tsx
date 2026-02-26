@@ -27,9 +27,9 @@ export default function DeliverySection() {
           </div>
 
           {/* Floating status cards + route line */}
-          <div className="absolute bottom-8 left-6 right-6 flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
+          <div className="absolute bottom-4 sm:bottom-8 left-3 right-3 sm:left-6 sm:right-6 flex flex-col sm:flex-row gap-3 sm:gap-6 justify-center items-center">
             {/* Origin card */}
-            <div className="bg-black/85 backdrop-blur-md rounded-xl p-4 flex items-center gap-3 border border-yellow-500/30 shadow-lg shadow-yellow-600/20 min-w-[160px]">
+            <div className="bg-black/85 backdrop-blur-md rounded-xl p-3 sm:p-4 flex items-center gap-3 border border-yellow-500/30 shadow-lg shadow-yellow-600/20 w-full sm:w-auto sm:min-w-[160px]">
               <div className="w-3 h-3 rounded-full bg-yellow-500 shrink-0" />
               <div>
                 <p className="text-xs text-gray-400">Origin</p>
@@ -43,7 +43,7 @@ export default function DeliverySection() {
             </div>
 
             {/* In progress indicator + destination */}
-            <div className="bg-black/85 backdrop-blur-md rounded-xl p-4 flex flex-col gap-2 border border-green-500/40 shadow-lg shadow-green-600/20 min-w-[180px]">
+            <div className="bg-black/85 backdrop-blur-md rounded-xl p-3 sm:p-4 flex flex-col gap-2 border border-green-500/40 shadow-lg shadow-green-600/20 w-full sm:w-auto sm:min-w-[180px]">
               <div className="flex items-center gap-3">
                 <div className="w-3 h-3 rounded-full bg-green-500 animate-pulse shrink-0" />
                 <p className="text-sm font-semibold text-green-400">In progress</p>
@@ -70,9 +70,9 @@ export default function DeliverySection() {
             Deliver packages that matter on time
           </div>
 
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-            Speed, <span className="text-orange-500">Accuracy</span>,<br />
-            Reliability – Logistics<br />that counts
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+            Speed, <span className="text-orange-500">Accuracy</span>,<br className="hidden sm:inline" />
+            Reliability – Logistics<br className="hidden sm:inline" /> that counts
           </h2>
 
           <p className="text-gray-500 leading-relaxed">

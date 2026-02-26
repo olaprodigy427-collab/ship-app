@@ -41,7 +41,7 @@ export default function ContactPage() {
     <div className="bg-bgLight min-h-screen">
       {/* Support Center Header */}
       <section className="pt-16 pb-10 md:pt-24 md:pb-16 px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold text-textDark mb-8">Support Center</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-textDark mb-6 sm:mb-8">Support Center</h1>
 
         {/* Tabs */}
         <div className="flex justify-start md:justify-center gap-6 md:gap-12 text-base md:text-lg font-medium border-b border-gray-200 pb-4 overflow-x-auto px-4 scrollbar-hide">
@@ -70,7 +70,7 @@ export default function ContactPage() {
         <div className="grid md:grid-cols-2 gap-10 lg:gap-16">
           {/* Left Column - Contact Information */}
           <div>
-            <h2 className="text-3xl font-bold text-textDark mb-6">Contact Us</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-textDark mb-6">Contact Us</h2>
             <p className="text-textGray mb-10 leading-relaxed">
               For any urgent inquiries, please contact us using the details provided below.
             </p>
@@ -113,7 +113,7 @@ export default function ContactPage() {
 
           {/* Right Column - Contact Form Card */}
           <div id="message-form" className="bg-white rounded-3xl shadow-xl p-6 sm:p-8 md:p-10">
-            <h3 className="text-xl md:text-2xl font-semibold mb-8 text-center md:text-left">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-semibold mb-6 sm:mb-8 text-center md:text-left">
               Have a question for us? Let us know & we will respond within 24 hours
             </h3>
 

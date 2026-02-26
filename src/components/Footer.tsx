@@ -21,7 +21,7 @@ export default function Footer() {
                 placeholder="Email address"
                 className="flex-1 px-5 py-3.5 rounded-l-full bg-white text-textDark focus:outline-none focus:ring-2 focus:ring-primary/50"
               />
-              <button className="bg-primary text-white px-8 py-3.5 rounded-r-full hover:opacity-90 transition font-medium">
+              <button className="bg-primary text-white px-6 sm:px-8 py-3.5 rounded-r-full hover:opacity-90 transition font-medium whitespace-nowrap">
                 Subscribe
               </button>
             </div>
@@ -95,7 +95,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom Divider + Copyright + Social */}
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-6 text-sm">
+        <div className="border-t border-white/10 pt-8 flex flex-col items-center md:flex-row md:justify-between gap-6 text-sm">
 
           {/* Copyright */}
           <p className="text-gray-400 text-center md:text-left">

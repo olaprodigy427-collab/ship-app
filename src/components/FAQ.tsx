@@ -31,7 +31,7 @@ export default function FAQ() {
 
           {/* Header */}
           <div className="mb-8">
-            <h2 className="text-3xl font-bold text-textDark">
+            <h2 className="text-2xl sm:text-3xl font-bold text-textDark">
               Frequently asked questions
             </h2>
             <p className="text-textGray mt-2">
@@ -71,7 +71,7 @@ export default function FAQ() {
                 key={index}
                 className="bg-white rounded-xl border border-gray-100 group"
               >
-                <summary className="flex items-center justify-between px-6 py-4 cursor-pointer list-none">
+                <summary className="flex items-center justify-between px-4 sm:px-6 py-3 sm:py-4 cursor-pointer list-none">
                   <span className="font-medium text-textDark">
                     {item.q}
                   </span>
@@ -79,7 +79,7 @@ export default function FAQ() {
                     ▼
                   </span>
                 </summary>
-                <div className="px-6 pb-4 text-textGray text-sm leading-relaxed">
+                <div className="px-4 sm:px-6 pb-4 text-textGray text-sm leading-relaxed">
                   {item.a}
                 </div>
               </details>

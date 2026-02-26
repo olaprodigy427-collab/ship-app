@@ -11,14 +11,14 @@ export default function Testimonials() {
             alt="Customer"
             width={1200}
             height={900}
-            className="rounded-full"
+            className="rounded-full w-full max-w-3xl h-auto"
           />
         </div>
 
         {/* Title */}
         <div className="text-center">
           <p className="text-textGray">Testimonials</p>
-          <h2 className="text-3xl font-bold text-textDark">
+          <h2 className="text-2xl sm:text-3xl font-bold text-textDark">
             What Our Customers Are Saying
           </h2>
           <p className="text-textGray">
@@ -27,7 +27,7 @@ export default function Testimonials() {
         </div>
 
         {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {/* Card 1 */}
           <div className="bg-white p-6 rounded-lg shadow">
             <div className="flex items-center space-x-2">
@@ -88,8 +88,8 @@ export default function Testimonials() {
               </div>
             </div>
             <p className="mt-4 text-textGray">
-               "Sending parcels used to be a hassle, but with DYB Logistics, it’s now 
-               effortless and smooth, fast and reliable."
+              "Sending parcels used to be a hassle, but with DYB Logistics, it’s now
+              effortless and smooth, fast and reliable."
             </p>
           </div>
         </div>

@@ -91,7 +91,7 @@ export default function AboutPage() {
             <div className="mb-3 flex justify-center">
               <Package className="w-8 h-8 text-primary" />
             </div>
-            <p className="text-4xl font-bold text-primary mb-1">70,000</p>
+            <p className="text-3xl sm:text-4xl font-bold text-primary mb-1">70,000</p>
             <p className="text-textGray">Packages delivered</p>
           </div>
 
@@ -100,7 +100,7 @@ export default function AboutPage() {
             <div className="mb-3 flex justify-center">
               <Users className="w-8 h-8 text-primary" />
             </div>
-            <p className="text-4xl font-bold text-primary mb-1">5,000</p>
+            <p className="text-3xl sm:text-4xl font-bold text-primary mb-1">5,000</p>
             <p className="text-textGray">Active Users</p>
           </div>
 
@@ -109,7 +109,7 @@ export default function AboutPage() {
             <div className="mb-3 flex justify-center">
               <MapPin className="w-8 h-8 text-primary" />
             </div>
-            <p className="text-4xl font-bold text-primary mb-1">25</p>
+            <p className="text-3xl sm:text-4xl font-bold text-primary mb-1">25</p>
             <p className="text-textGray">Destinations covered</p>
           </div>
 
@@ -136,7 +136,7 @@ export default function AboutPage() {
       {/* Our Values */}
       <section className="py-16 bg-white px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Values</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12">Our Values</h2>
           <div className="grid md:grid-cols-2 gap-x-16 gap-y-12">
             <div>
               <div className="h-1 w-12 bg-primary mb-4"></div>
@@ -183,7 +183,7 @@ export default function AboutPage() {
               alt="Mission Team"
               width={600}
               height={500}
-              className="rounded-2xl shadow-lg"
+              className="rounded-2xl shadow-lg w-full"
               onError={(e) => {
                 (e.currentTarget as HTMLImageElement).style.display = "none";
               }}
@@ -212,7 +212,7 @@ export default function AboutPage() {
       {/* Ship with DYB Banner */}
       <section className="bg-bgDark text-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">Ship with the DYB team</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-6">Ship with the DYB team</h2>
           <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
             DYB is a forward-thinking logistics company, and we are intentional
             about working with people who are passionate, innovative, and committed

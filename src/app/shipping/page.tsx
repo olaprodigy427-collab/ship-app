@@ -9,7 +9,7 @@ export default function ShippingPage() {
       <section className="pt-16 pb-12 md:pt-24 md:pb-16 px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-textDark leading-tight mb-6">
-            Choose Your Preferred Shipping <br></br> Option By Cost
+            Choose Your Preferred Shipping <br className="hidden sm:inline"></br> Option By Cost
           </h1>
         </div>
       </section>
@@ -50,7 +50,7 @@ export default function ShippingPage() {
 
             <h4 className="text-lg font-semibold mb-4">Rates</h4>
             <div className="space-y-4">
-              <div className="flex items-center justify-between p-4 border border-primary rounded-full">
+              <div className="flex items-center justify-between p-3 sm:p-4 border border-primary rounded-full">
                 <div className="flex items-center gap-3">
                   <span className="text-xl">🚚</span>
                   <span className="font-medium">Express</span>
@@ -61,7 +61,7 @@ export default function ShippingPage() {
                 </div>
               </div>
 
-              <div className="flex items-center justify-between p-4 border border-gray-200 rounded-full">
+              <div className="flex items-center justify-between p-3 sm:p-4 border border-gray-200 rounded-full">
                 <div className="flex items-center gap-3">
                   <span className="text-xl">🚶</span>
                   <span className="font-medium">Domestic</span>

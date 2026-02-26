@@ -15,8 +15,8 @@ export default function Hero() {
             <p>Demos available on request</p>
           </div>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-textDark leading-tight">
-            Reliable Logistics, <br /> On-Time Every Time
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-textDark leading-tight">
+            Reliable Logistics, <br className="hidden sm:inline" /> On-Time Every Time
           </h1>
 
           <p className="text-textGray max-w-md">
@@ -27,7 +27,7 @@ export default function Hero() {
 
         {/* Right Image + Floating Cards */}
         <motion.div
-          className="md:w-1/2 relative"
+          className="md:w-1/2 relative overflow-hidden"
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: "easeOut" }}
@@ -44,7 +44,7 @@ export default function Hero() {
 
             {/* Top Floating Card */}
             <motion.div
-              className="absolute -top-6 -left-6 bg-white px-5 py-3 rounded-xl shadow-md -rotate-6"
+              className="absolute top-2 left-2 sm:-top-6 sm:-left-6 bg-white px-4 sm:px-5 py-2 sm:py-3 rounded-xl shadow-md sm:-rotate-6 z-10"
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
@@ -59,7 +59,7 @@ export default function Hero() {
 
             {/* Bottom Floating Card */}
             <motion.div
-              className="absolute bottom-6 -right-6 bg-white px-5 py-3 rounded-xl shadow-md"
+              className="absolute bottom-4 right-2 sm:bottom-6 sm:-right-6 bg-white px-4 sm:px-5 py-2 sm:py-3 rounded-xl shadow-md z-10"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
