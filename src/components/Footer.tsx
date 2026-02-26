@@ -68,7 +68,7 @@ export default function Footer() {
               <h4 className="text-white font-semibold mb-4">Resources</h4>
               <ul className="space-y-2.5">
                 <li>
-                  <Link href="/resources" className="hover:text-white transition">
+                  <Link href="/contact#faq-section" className="hover:text-white transition">
                     FAQs
                   </Link>
                 </li>
