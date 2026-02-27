@@ -27,7 +27,7 @@ export default function Hero() {
 
         {/* Right Image + Floating Cards */}
         <motion.div
-          className="md:w-1/2 relative overflow-hidden"
+          className="md:w-1/2 relative p-4 sm:p-8"
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: "easeOut" }}
@@ -44,7 +44,7 @@ export default function Hero() {
 
             {/* Top Floating Card */}
             <motion.div
-              className="absolute top-2 left-2 sm:-top-6 sm:-left-6 bg-white px-4 sm:px-5 py-2 sm:py-3 rounded-xl shadow-md sm:-rotate-6 z-10"
+              className="absolute -top-2 -left-2 sm:-top-4 sm:-left-4 bg-white px-4 sm:px-5 py-2 sm:py-3 rounded-xl shadow-md sm:-rotate-6 z-10"
               initial={{ opacity: 0, y: -20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
@@ -59,7 +59,7 @@ export default function Hero() {
 
             {/* Bottom Floating Card */}
             <motion.div
-              className="absolute bottom-4 right-2 sm:bottom-6 sm:-right-6 bg-white px-4 sm:px-5 py-2 sm:py-3 rounded-xl shadow-md z-10"
+              className="absolute -bottom-2 -right-2 sm:-bottom-4 sm:-right-4 bg-white px-4 sm:px-5 py-2 sm:py-3 rounded-xl shadow-md z-10"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}

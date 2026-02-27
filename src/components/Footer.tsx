@@ -15,13 +15,13 @@ export default function Footer() {
             <p className="text-white font-semibold text-lg mb-4">
               Subscribe to our newsletter
             </p>
-            <div className="flex w-full">
+            <div className="flex flex-col sm:flex-row w-full gap-3 sm:gap-0">
               <input
                 type="email"
                 placeholder="Email address"
-                className="flex-1 px-5 py-3.5 rounded-l-full bg-white text-textDark focus:outline-none focus:ring-2 focus:ring-primary/50"
+                className="flex-1 px-5 py-3.5 rounded-full sm:rounded-r-none sm:rounded-l-full bg-white text-textDark focus:outline-none focus:ring-2 focus:ring-primary/50"
               />
-              <button className="bg-primary text-white px-6 sm:px-8 py-3.5 rounded-r-full hover:opacity-90 transition font-medium whitespace-nowrap">
+              <button className="bg-primary text-white px-6 sm:px-8 py-3.5 rounded-full sm:rounded-l-none sm:rounded-r-full hover:opacity-90 transition font-medium whitespace-nowrap">
                 Subscribe
               </button>
             </div>
